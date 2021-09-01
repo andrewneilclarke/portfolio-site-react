@@ -1,10 +1,14 @@
+import Contact from "./Contact";
 
 const Home = () => {
+    
     return (
-            <p className="home-text">
-                Hi, my name is Andrew and I create beautiful and functional websites for small businesses. Check out the 
-                rest of my site to see some of my previous projects and feel free to contact me regarding your site. 
-            </p>
+        <main id="home">
+            <h1 className="lg-heading">Andrew Clarke - <span className="text-secondary"> "Developer, Designer, Creator"</span></h1>
+            <h2 className="sm-heading">Welcome to my website</h2> 
+            <Contact /> 
+        </main>
+        
     )
 }
 

@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;1,200&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --secondary: rgb(96, 172, 96);
+  --background-opacity: 0.9;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  height: 100vh;
+  /* background-color: #616161; */
+  color: black;
+  line-height: 1.5;
+}
+
+/* headings */
+h1,
+h2,
+h3 {
+  font-weight: 300;
+}
+.lg-heading {
+  font-size: 4rem;
+}
+.sm-heading {
+  margin-bottom: 2rem;
+  padding: 0.2rem 1rem;
+  /* background: ; */
+}
+a {
+  color: black;
+  text-decoration: none;
+}
+header {
+  position: fixed;
+  z-index: 2;
+  width: 100%;
+}
+.text-secondary {
+  color: var(--secondary);
+}
+main {
+  padding: 4rem;
+  height: 100vh;
+}
+.icons {
+  margin-top: 1rem;
+}
+.icons ul a {
+  margin: 0.4rem;
+  transition: 0.05s ease-in;
+}
+.icons ul a:hover {
+  transform: scale(1.4);
+}
+#home {
+  overflow: hidden;
+}
+#home h1 {
+  margin-top: 20vh;
+}
+#bg-img {
+  z-index: 2;
+  &: after;
+}
+#bg-img::after {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  /* background: rgba(var(--secondary), var(--background-opacity)); */
+  background: rgba(168, 255, 160, 0.3);
+  z-index: -4;
+}
+.overlay {
+  /* position: absolute;
+  right: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(var(--secondary), var(--background-opacity));
+  background: rgba(168, 255, 160, 0.3);
+  z-index: -4; */
+}

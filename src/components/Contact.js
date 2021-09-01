@@ -5,28 +5,19 @@ import { SocialIcon } from 'react-social-icons'
 
 const Contact = () => {
     return (
-        <div className="socials">
-            <p>Contact Info.</p>
-                <div> 
-                    
-                    <IconContext.Provider value={{ style: {fontSize: '30px', color: "crimson"}}}>
-                    <div>
-                    <FaEnvelope /> andrewneilclarke@gmail.com
-                    </div>
-                    </IconContext.Provider>
-                    <IconContext.Provider value={{ style: {fontSize: '30px', color: "rgb(0, 123, 255)"}}}>
-                    <div>
-                    <FaTwitter /> andrewclarke2u
-                    </div>
-                    </IconContext.Provider>
-                    <IconContext.Provider value={{ style: {fontSize: '30px', color: "#9e288a"}}}>
-                    <div>
-                    <FaInstagram /> @andrewclarkeweb
-                    </div>
-                    </IconContext.Provider>
-                    <SocialIcon url="https//twitter.com/andrewclarke2u" />
-                </div>
+        
+        <div className="icons">      
+                    <ul>
+                        <SocialIcon url="https://github.com/andrewclarkewebdesign" className="mx-1 my-4" target="_blank" fgColor="#d8d7d7" style={{height: 35, width:35}} />
+                        <SocialIcon url="https://instagram.com/andrewclarkewebdesign" className="mx-1 my-4" target="_blank" fgColor="#d8d7d7" style={{height: 35, width:35}} />
+                        <SocialIcon url="https://twitter.com/andrewclarkewebdesign" className="mx-1 my-4" target="_blank" fgColor="#d8d7d7" style={{height: 35, width:35}} />
+                        <SocialIcon url="https://facebook.com/andrewclarkewebdesign" className="mx-1 my-4" target="_blank" fgColor="#d8d7d7" style={{height: 35, width:35}} />
+                        <SocialIcon url="https://youtube.com/andrewclarkewebdesign" className="mx-1 my-4" target="_blank" fgColor="#d8d7d7" style={{height: 35, width:35}} />
+                        <SocialIcon url="https://linkedin.com/andrewclarkewebdesign" className="mx-1 my-4" target="_blank" fgColor="#d8d7d7" style={{height: 35, width:35}} />
+                        <SocialIcon url="https://whatsapp.com/andrewclarkewebdesign" className="mx-1 my-4" target="_blank" fgColor="#d8d7d7" style={{height: 35, width:35}} /> 
+                    </ul>
         </div>
+       
     )
 }
 

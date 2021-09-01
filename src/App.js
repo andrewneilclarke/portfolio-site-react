@@ -6,7 +6,7 @@ import NavBar from './components/NavBar';
 import Background from './background.jpg'
 
 const App = () => {
-  const [showHomeImage, setShowHomeImage] = useState(true)
+  const [showHomeImage, setShowHomeImage] = useState(false)
   return (
     <div className="app" id="bg-img" style={{ backgroundImage: showHomeImage && `url(${Background})` }}>
       <NavBar />

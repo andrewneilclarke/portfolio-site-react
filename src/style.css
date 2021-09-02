@@ -142,7 +142,7 @@ main {
 .menu-nav {
   margin: 0;
   padding: 0;
-  background: #373737;
+  background: rgba(0, 0, 0, 0.5);
   list-style: none;
   transform: translate3d(0, -100%, 0);
   transition: all 0.5s ease-out;
@@ -151,7 +151,7 @@ main {
   transform: translate3d(0, 0, 0);
 }
 .menu-branding {
-  background: #444;
+  background: rgba(0, 0, 0, 0.5);
   transform: translate3d(0, 100%, 0);
   transition: all 0.5s ease-out;
 }
@@ -163,7 +163,7 @@ main {
   height: 250px;
   /* background: url("../img/portrait.jpg"); */
   border-radius: 50%;
-  border: solid 3px #eece1a;
+  border: solid 3px var(--secondary);
 }
 .menu .nav-item {
   transform: translate3d(600px, 0, 0);
@@ -173,7 +173,7 @@ main {
   transform: translate3d(0, 0, 0);
 }
 .menu .nav-item.current > a {
-  color: #eece1a;
+  color: var(--secondary);
 }
 .menu .nav-link {
   display: inline-block;
@@ -187,7 +187,7 @@ main {
   transition: all 0.5s ease-out;
 }
 .menu .nav-link:hover {
-  color: chartreuse;
+  color: var(--secondary);
   transform: scale(1.25);
 }
 

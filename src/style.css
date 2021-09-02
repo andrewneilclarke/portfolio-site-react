@@ -6,7 +6,7 @@
   padding: 0;
 }
 :root {
-  --secondary: rgb(96, 172, 96);
+  --secondary: rgb(105, 172, 184);
   --background-opacity: 0.9;
 }
 
@@ -53,7 +53,7 @@ main {
 }
 .icons ul a {
   margin: 0.4rem;
-  transition: 0.05s ease-in;
+  transition: cubic-bezier(0.165, 0.84, 0.44, 1) 0.4s;
 }
 .icons ul a:hover {
   transform: scale(1.4);
@@ -66,7 +66,6 @@ main {
 }
 #bg-img {
   z-index: 2;
-  &: after;
 }
 #bg-img::after {
   position: absolute;
@@ -121,7 +120,6 @@ main {
   position: fixed;
   top: 0;
   width: 100vw;
-  opacity: 0.9;
   visibility: hidden;
 }
 .show {
@@ -161,13 +159,16 @@ main {
 .menu-branding .portrait {
   width: 250px;
   height: 250px;
-  /* background: url("../img/portrait.jpg"); */
+  background: url("./img/andrew.jpg") center center / cover;
+  /* background-size: cover; */
   border-radius: 50%;
   border: solid 3px var(--secondary);
 }
 .menu .nav-item {
-  transform: translate3d(600px, 0, 0);
+  transform: translate3d(200px, 0, 0);
   transition: all 0.5s ease-out;
+  display: flex;
+  flex-direction: column;
 }
 .menu .nav-item.show {
   transform: translate3d(0, 0, 0);

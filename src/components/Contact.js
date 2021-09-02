@@ -1,5 +1,5 @@
-import {FaTwitter, FaInstagram, FaEnvelope } from "react-icons/fa"
-import {IconContext} from "react-icons"
+// import {FaTwitter, FaInstagram, FaEnvelope } from "react-icons/fa"
+// import {IconContext} from "react-icons"
 import { SocialIcon } from 'react-social-icons'
 
 const Contact = () => {

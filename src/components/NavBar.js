@@ -1,6 +1,6 @@
-import { NavLink } from 'react-router-dom'
-import { SocialIcon } from 'react-social-icons'
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
+// import { NavLink } from 'react-router-dom'
+// import { SocialIcon } from 'react-social-icons'
+// import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 import { useState } from 'react'
 
 const NavBar = () => {

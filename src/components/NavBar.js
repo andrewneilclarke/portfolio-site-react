@@ -24,10 +24,10 @@ const NavBar = () => {
                 </div>
                 <ul className={!showMenu ? "menu-nav show" : "menu-nav"}>
                     <li className="nav-item">
-                        <a href="!#" className={!showMenu ? "nav-link show" : "nav-link"} alt="about">About</a>
-                        <a href="!#" className={!showMenu ? "nav-link show" : "nav-link"} alt="services">My Services</a>
-                        <a href="!#" className={!showMenu ? "nav-link show" : "nav-link"} alt="projects">Projects</a>
-                        <a href="!#" className={!showMenu ? "nav-link show" : "nav-link"} alt="contact">Hire / Contact me</a>
+                        <a href="!#" onClick={toggleMenu} className={!showMenu ? "nav-link show" : "nav-link"} alt="about">About</a>
+                        <a href="!#" onClick={toggleMenu} className={!showMenu ? "nav-link show" : "nav-link"} alt="services">My Services</a>
+                        <a href="!#" onClick={toggleMenu} className={!showMenu ? "nav-link show" : "nav-link"} alt="projects">Projects</a>
+                        <a href="!#" onClick={toggleMenu} className={!showMenu ? "nav-link show" : "nav-link"} alt="contact">Hire / Contact me</a>
                     </li>
                 </ul>
             </nav>

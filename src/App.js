@@ -3,8 +3,8 @@ import { useState } from 'react'
 // import Contact from './components/Contact';
 import Home from './components/Home';
 import NavBar from './components/NavBar';
-
 import Projects from './components/Projects';
+// import Background from './pexels2.jpg'
 import Background from './pexels.jpg'
 
 const App = () => {

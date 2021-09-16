@@ -6,7 +6,7 @@
   padding: 0;
 }
 :root {
-  --secondary: rgb(114, 100, 245);
+  --secondary: rgb(39, 154, 255);
   --background-opacity: 0.9;
 }
 
@@ -29,7 +29,7 @@ h3 {
 }
 .sm-heading {
   margin-bottom: 2rem;
-  padding: 0.2rem 0;
+  /* padding: 0.2rem 0; */
   /* Add background?: ; */
 }
 a {
@@ -67,7 +67,7 @@ main {
   position: absolute;
   top: 0;
   left: 0;
-  padding: 60px;
+  padding: 100px 60px;
   /* z-index: 3; */
   height: 100vh;
   width: 100vw;

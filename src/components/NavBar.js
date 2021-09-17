@@ -4,9 +4,7 @@
 import { useState } from 'react'
 
 const NavBar = () => {
-
     const [showMenu, setShowMenu] = useState(true)
-
     const toggleMenu = () => {
         setShowMenu(!showMenu)
     }
@@ -24,9 +22,9 @@ const NavBar = () => {
                 </div>
                 <ul className={!showMenu ? "menu-nav show" : "menu-nav"}>
                     <li className="nav-item">
-                        <a href="!#" onClick={toggleMenu} className={!showMenu ? "nav-link show" : "nav-link"} alt="about">About</a>
-                        <a href="!#" onClick={toggleMenu} className={!showMenu ? "nav-link show" : "nav-link"} alt="services">My Services</a>
+                        <a href="/about" onClick={toggleMenu} className={!showMenu ? "nav-link show" : "nav-link"} alt="about">About Me</a>
                         <a href="!#" onClick={toggleMenu} className={!showMenu ? "nav-link show" : "nav-link"} alt="projects">Projects</a>
+                        <a href="!#" onClick={toggleMenu} className={!showMenu ? "nav-link show" : "nav-link"} alt="services">My Services</a>
                         <a href="!#" onClick={toggleMenu} className={!showMenu ? "nav-link show" : "nav-link"} alt="contact">Hire / Contact me</a>
                     </li>
                 </ul>

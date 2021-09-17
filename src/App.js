@@ -1,25 +1,23 @@
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
-import { useState } from 'react'
 // import Contact from './components/Contact';
 import Home from './components/Home';
 import NavBar from './components/NavBar';
 import Projects from './components/Projects';
-// import Background from './pexels2.jpg'
-import Background from './pexels.jpg'
+import About from './components/About'
 
 const App = () => {
-  const [showHomeImage] = useState(false)
+  const name = 'Andrew Clarke '
   return (
     <Router>
-    <div className="app" id="bg-img" style={{ backgroundImage: showHomeImage && `url(${Background})` }}>
+    <div className="app" id="bg-img">
       <NavBar />
       <div className="content"> 
         <Switch>
           <Route exact path="/">
-              <Home/>
+              <Home name={name} />
           </Route>
           <Route path="/about">
-              <Home />
+              <About name={name} />
             </Route>
           <Route path="/services">
               <Home />

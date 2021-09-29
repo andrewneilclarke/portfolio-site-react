@@ -1,5 +1,5 @@
 import Contact from "./Contact";
-import Initials from "./Initials";
+// import Initials from "./Initials";
 import { Spring } from 'react-spring'
 
 const Home = ({ title }) => {

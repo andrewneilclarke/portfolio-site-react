@@ -30,7 +30,7 @@ const Projects = ({ title }) => {
                                         <div className="bg-gray-200 opacity-50 h-auto w-96 p-8 flex flex-col text-center items-center justify-center" id="projects">
                                                 {projects.map((project) => (
                                                         <div className="m-3 flex flex-col text-center items-center" key={project.name}>
-                                                                <h1 className="project-title text-2xl">{project.name}</h1>
+                                                                <h1 className="project-title text-2xl transform hover:scale-125 duration-1000 cursor-pointer">{project.name}</h1>
                                                                 <div className="project-tech">
                                                                         {project.tech.map((item) => (
                                                                                 <p className="text-gray-300 bg-gray-500 w-32 m-1 rounded-2xl" key={Math.random()}>{item}</p>

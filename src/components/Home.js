@@ -10,7 +10,7 @@ const Home = ({ title }) => {
             <Spring>
                 {props => (
                     <div style={props}>
-                        <Initials />
+                        {/* <Initials /> */}
                     </div>
                 )}
             </Spring>

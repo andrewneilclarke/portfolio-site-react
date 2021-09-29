@@ -7,7 +7,6 @@ import Projects from './components/Projects';
 import ContactForm from './components/ContactForm';
 import Services from './components/Services'
 import About from './components/About'
-import Contact from './components/Contact';
 
 const App = () => {
   const name = 'Andrew Clarke '

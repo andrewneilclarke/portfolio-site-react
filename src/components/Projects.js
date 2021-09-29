@@ -1,4 +1,5 @@
 import Return from './Return'
+import Project from './Project'
 
 const Projects = ({ title }) => {
         const projects = [
@@ -29,23 +30,12 @@ const Projects = ({ title }) => {
                                 <Return />
                                 <h1 className="lg-heading typewriter text-center mb-10"><typewritten-text>{title}</typewritten-text></h1>
                                 <div className="flex flex-col items-center justify-evenly">
-                                        <div className="bg-gray-200 opacity-50 h-auto w-96 p-8 flex flex-col text-center items-center justify-center rounded-xl" id="projects">
+                                        <div className="bg-gray-200 opacity-50 h-auto w-full p-8 flex flex-row text-center items-between justify-between rounded-xl" id="projects">
                                                 {projects.map((project) => (
-                                                        <div className="m-3 flex flex-col text-center items-center" key={project.name}>
-                                                                <h1 className="project-title text-2xl transform hover:scale-125 duration-1000 cursor-pointer">{project.name}</h1>
-                                                                <div className="project-tech">
-                                                                        {project.tech.map((item) => (
-                                                                                <p className="text-gray-300 bg-gray-500 w-32 m-1 rounded-2xl" key={Math.random()}>{item}</p>
+                                                        <Project key={project.name} name={project.name} tech={project.tech} url={project.url} />
+                                                ))
+                                                }
 
-                                                                        )
-
-                                                                        )}
-
-                                                                </div>
-                                                                <p className="text-gray-500">{project.url}</p>
-                                                        </div>
-                                                )
-                                                )}
                                         </div>
 
 

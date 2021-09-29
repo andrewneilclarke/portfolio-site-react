@@ -9,7 +9,7 @@ const NavBar = () => {
         setShowMenu(!showMenu)
     }
 
-    return (    
+    return (
         <header>
             <div className={!showMenu ? "menu-btn close" : "menu-btn"} onClick={toggleMenu}>
                 <div className="btn-line"></div>
@@ -23,14 +23,14 @@ const NavBar = () => {
                 <ul className={!showMenu ? "menu-nav show" : "menu-nav"}>
                     <li className="nav-item">
                         <a href="/about" onClick={toggleMenu} className={!showMenu ? "nav-link show" : "nav-link"} alt="about">About Me</a>
-                        <a href="!#" onClick={toggleMenu} className={!showMenu ? "nav-link show" : "nav-link"} alt="projects">Projects</a>
-                        <a href="!#" onClick={toggleMenu} className={!showMenu ? "nav-link show" : "nav-link"} alt="services">My Services</a>
-                        <a href="!#" onClick={toggleMenu} className={!showMenu ? "nav-link show" : "nav-link"} alt="contact">Hire / Contact me</a>
+                        <a href="/projects" onClick={toggleMenu} className={!showMenu ? "nav-link show" : "nav-link"} alt="projects">Projects</a>
+                        <a href="/services" onClick={toggleMenu} className={!showMenu ? "nav-link show" : "nav-link"} alt="services">My Services</a>
+                        <a href="/contact" onClick={toggleMenu} className={!showMenu ? "nav-link show" : "nav-link"} alt="contact">Hire / Contact me</a>
                     </li>
                 </ul>
             </nav>
-            
-        </header>     
+
+        </header>
     )
 }
 

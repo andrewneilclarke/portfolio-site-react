@@ -1,6 +1,9 @@
+import Return from './Return'
+
 const Services = ({ title }) => {
     return (
         <div className="overlay">
+            <Return />
             <h1 className="lg-heading typewriter text-center mb-10"><typewritten-text>{title}</typewritten-text></h1>
             <div className="flex flex-col items-center justify-evenly">
                 <div className="bg-gray-200 opacity-50 h-auto w-96 p-8 flex flex-col text-center items-center justify-center">

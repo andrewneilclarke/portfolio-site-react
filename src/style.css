@@ -6,8 +6,8 @@
   padding: 0;
 }
 :root {
-  --secondary: black;
-  --background-opacity: 0.9;
+  --secondary: rgb(36, 242, 119);
+  --background-opacity: 1;
 }
 
 body {
@@ -26,7 +26,8 @@ h3 {
 .app {
   height: 100vh;
   width: 100vw;
-  background: url(./D.jpg) no-repeat center center / cover;
+  /* background: url(./D.jpg) no-repeat center center / cover; */
+  background: url(./H.jpg) no-repeat center center / cover;
     
 }
 .lg-heading {

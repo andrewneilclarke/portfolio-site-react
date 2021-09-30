@@ -26,7 +26,7 @@ const Projects = ({ title }) => {
         return (
 
                 <main id="projects flex flex-col items-center text-center text-black">
-                        <div className="overlay">
+                        <div className="overlay flex flex-col text-center">
                                 <Return />
                                 <h1 className="lg-heading typewriter text-center mb-10"><typewritten-text>{title}</typewritten-text></h1>
                                 <div className="flex flex-col items-center justify-evenly">

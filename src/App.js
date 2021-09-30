@@ -9,10 +9,9 @@ import Services from './components/Services'
 import About from './components/About'
 
 const App = () => {
-  const name = 'Andrew Clarke '
   return (
     <Router>
-      <div className="app">
+      <div className="app w-screen h-screen">
         <NavBar />
         <div className="content">
           <Switch>
@@ -20,7 +19,7 @@ const App = () => {
               <Home title='Andrew Clarke' />
             </Route>
             <Route path="/about">
-              <About name={name} title='About Me' />
+              <About title='About Me' />
             </Route>
             <Route path="/services">
               <Services title='Services' />

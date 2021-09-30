@@ -3,7 +3,7 @@ import Return from './Return'
 const About = ({ title }) => {
     return (
         <main id="about">
-            <div className="overlay">
+            <div className="overlay flex flex-col text-center">
                 <Return />
                 <h1 className="lg-heading typewriter mb-10"><typewritten-text>{title}</typewritten-text></h1>
                 <div className="flex flex-col items-center justify-evenly">

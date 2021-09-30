@@ -14,7 +14,7 @@ const Home = ({ title }) => {
                     </div>
                 )}
             </Spring>
-            <div className="overlay flex flex-col">
+            <div className="overlay flex flex-col justify-evenly">
                 <h1 className="lg-heading typewriter text-white"><typewritten-text>{title}
                     <ul className="text-secondary">
                         <li> {` - `}{job[0]} </li>
